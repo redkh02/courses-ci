@@ -6,4 +6,4 @@ on:
       - main
   pull_request:
     branches:
-      - mai
+      - main
