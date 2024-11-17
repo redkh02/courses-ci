@@ -97,3 +97,4 @@ jobs:
       <<: *defaults  # Utilisation de l'ancre "defaults"
       - name: Run Only Canary Test
         run: echo "Hello Only Canary !"
+#fff
