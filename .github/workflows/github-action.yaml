@@ -5,7 +5,7 @@ on:
     branches:
       - main
     tags:  # On peut spécifier que les jobs ne s'exécutent pas sur un tag
-      - '*' # Si vous ne souhaitez pas exécuter les jobs sur un tag
+      - '*'  # Si vous ne souhaitez pas exécuter les jobs sur un tag
   pull_request:
     branches:
       - main
@@ -81,7 +81,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITH_TOK }}
           GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
           GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
- e2e-test:
+
+  e2e-test:
     runs-on: ubuntu-latest
     needs: unit-test
     if: github.event_name == 'pull_request'  # Le job ne s'exécute que pour les pull requests
